@@ -35,7 +35,8 @@ function FaqItem({ question, answer }) {
 
   return (
     <div
-      className="relative faqbox border-2 border-black rounded-[35px] bg-[#EA3859] p-10 lg:w-[900px] w-11/12 mb-4 shadow-lg"
+      onClick={toggleFAQ}
+      className="cursor-pointer relative faqbox border-2 border-black rounded-[35px] bg-[#EA3859] p-10 lg:w-[900px] w-11/12 mb-4 shadow-lg"
       style={{
         backgroundImage: `url(${backstripes})`,
         backgroundSize: "cover",
@@ -44,8 +45,10 @@ function FaqItem({ question, answer }) {
         boxShadow: "0 10px 0px #000000", // Added thick shadow at the bottom
       }}
     >
-      <div className="flex justify-between items-center">
-        <h2 className="text-white lg:text-5xl text-3xl">{question}</h2>
+      <div className="flex justify-between items-center ">
+        <h2 className="text-white lg:text-5xl text-3xl" onClick={toggleFAQ}>
+          {question}
+        </h2>
         <button onClick={toggleFAQ}>
           <img
             src={close}

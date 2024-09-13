@@ -15,12 +15,21 @@ function Header() {
   return (
     <div className="flex justify-center items-center w-full z-50">
       <div className="backdrop-blur-xl sg-[#FFC03E] w-10/12 lg:py-3 py-1 flex flex-row justify-around items-center rounded-full border-black border-4 m-2">
-        <img src={logo} alt="logo" className="lg:w-20 w-16 " />
+        <a href="#home">
+          <img
+            src={logo}
+            alt="logo"
+            className="lg:w-20 w-16 transform transition-transform duration-300 hover:scale-95 active:scale-90"
+          />
+        </a>
 
         <div className="menu hidden lg:flex">
           <ul className="flex flex-row gap-4">
             {menuItems.map((item, index) => (
-              <li key={index} className="text-white text-4xl">
+              <li
+                key={index}
+                className="text-white text-4xl transform transition-transform duration-300 hover:scale-95 active:scale-90"
+              >
                 <a href={item.href}>{item.name}</a>
               </li>
             ))}
@@ -47,7 +56,11 @@ function Header() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={social.src} alt={social.alt} className="lg:w-20 w-12" />
+              <img
+                src={social.src}
+                alt={social.alt}
+                className="lg:w-20 w-12 transform transition-transform duration-300 hover:scale-95 active:scale-90"
+              />
             </a>
           ))}
         </div>

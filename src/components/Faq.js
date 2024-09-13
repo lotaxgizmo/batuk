@@ -27,12 +27,12 @@ function Faq() {
         <img
           src={weed1}
           alt="weed1"
-          className="lg:w-60 w-48 absolutee bottom-0 left-0"
+          className="lg:w-60 w-48 absolutee bottom-0 left-0 transform transition-transform duration-300 hover:scale-95 active:scale-90"
         />
         <img
           src={weed2}
           alt="weed2"
-          className="lg:w-52 w-40 absolutee bottom-0 right-0"
+          className="lg:w-52 w-40 absolutee bottom-0 right-0 transform transition-transform duration-300 hover:scale-95 active:scale-90"
         />
       </div>
     </div>
