@@ -20,7 +20,7 @@ function Hero() {
         <img
           src={MHousebg}
           alt=""
-          className="z-10 max-w-none w-[1300px]   lg:max-w-auto lg:w-screen lg:h-screen  block lg:hidden -mt-20"
+          className="z-10 max-w-none w-[1300px]   lg:max-w-auto lg:w-screen lg:h-screen  block lg:hidden -mt-60"
         />
         <div className="bg-black w-full h-full absolute top-0 left-0 z-0"></div>
       </div>
