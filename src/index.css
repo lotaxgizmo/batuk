@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.cdnfonts.com/css/jost-3");
+
+@font-face {
+  font-family: "Adigiana Toybox";
+  src: url("./assets/Adigiana-Toybox-Regular.ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #f8c864;
+  font-family: "Adigiana Toybox", sans-serif;
+}
+
+.jost {
+  font-family: "Jost", sans-serif;
+}
+
+.batukbg {
+  background-image: url("../src/assets/walltodownload.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.batukbg2 {
+  background-image: url("../src/assets/redwalltodownload.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: repeat;
+}
+.batukbg3 {
+  background-image: url("../src/assets/burnbg.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: repeat;
+}
+.bottom {
+  background-image: url("../src/assets/bottom.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: repeat;
+}
+
+@media (min-width: 1024px) {
+  .batukbg2 {
+    background-size: cover;
+  }
+}
+
+.roosm {
+  background-image: url("../src/assets/section2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
