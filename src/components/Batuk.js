@@ -21,8 +21,12 @@ function Batuk() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center batukbg pb-20">
-      <img src={batukboard} alt="batukboard" className="w-10/12  mt-10 z-1d0" />
+    <div className="z-[3] flex flex-col justify-center items-center batukbg pb-20">
+      <img
+        src={batukboard}
+        alt="batukboard"
+        className="z-[3] w-10/12  mt-10 z-1d0"
+      />
 
       <div
         className="cash flex flex-row justify-between items-center w-full lg:-mt-40 -mt-32"
