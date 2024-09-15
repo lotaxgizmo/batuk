@@ -10,7 +10,7 @@ function Hero() {
       id="home"
       className="z-10 h-[1500px] bg-black flex flex-col relative items-center"
     >
-      <div className="z-10 door fixed flex  justify-center items-center">
+      <div className="z-10 door fixed flex w-full  justify-center items-center">
         <Door />
         <img
           src={Housebg}

@@ -21,19 +21,19 @@ function Door() {
     scrollY > 450 ? Math.max(90 - (scrollY - 450) / 5, 0) : 90; // Back door starts from 90 degrees and rotates to 0 degrees
 
   return (
-    <div className="absolute lg:h-[390px] lg:w-[268px] h-[400px] w-[230px] mx-auto lg:mt-[58px] mt-[-10px] lg:mr-[6px] mr-[6px]">
+    <div className="absolute lg:h-[50vh] h-[90vw]  w-full max-w-[37vh] mx-auto lg:mt-[3vh] mt-[-1vh] lg:mr-[1vh] mr-[1vh]">
       <div
-        className="absolute h-full w-full z-20"
+        className="absolute lg:h-[26vw] h-full w-full z-20"
         style={{
           transformOrigin: "left center",
           transform: `rotateY(${frontRotation}deg)`,
           backfaceVisibility: "hidden",
         }}
       >
-        <img src={doorfront} alt="Front Door" className=" z-20 h-full w-full" />
+        <img src={doorfront} alt="Front Door" className="z-20 h-full w-full" />
       </div>
       <div
-        className="absolute h-full w-full z-20"
+        className="absolute lg:h-[26vw] h-full w-full z-20"
         style={{
           transformOrigin: "right center",
           transform: `rotateY(${backRotation}deg)`, // Inverted rotation
