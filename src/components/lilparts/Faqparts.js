@@ -6,24 +6,19 @@ const faqData = [
   {
     question: "WHAT IS BATUK?",
     answer:
-      "Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet",
+      "Batuk is a Young Carefree Punjabi Bear Trying to Make It Big & MOG The world!",
   },
   {
-    question: "HOW DOES IT WORK?",
+    question: "WHAT DOES HE REPRESENT?",
     answer:
-      "Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet",
+      "Batuk represents tokenized winning on SOLANA. Join Batuk in his wild journey of online gambling, shitcoin trading, and other degenerate shenanigans.",
   },
   {
-    question: "WHAT'S NEXT?",
+    question: "WHY SHOULD ANYONE CARE?",
     answer:
-      "Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet",
+      "Because Batuk loves online gambling. Batuk loves trading shitcoins. Batuk smokes weed. Batuk has insomnia. Batuk spends too much time on crypto twitter. Batuk collects sneakers. Batuk is a fan of John McAffe. Batuk has HDHD. Batuk is sometimes retarded. Batuk is aucustic. Batuk wants to make it. Batuk wants to stop getting rekted… Need more reasons why, anon?",
   },
-  {
-    question: "WHAT'S NEXT?",
-    answer:
-      "Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet Lorem Ipsum Dolor Amet",
-  },
-  // Add more FAQ items here
+
 ];
 
 function FaqItem({ question, answer }) {
@@ -53,16 +48,14 @@ function FaqItem({ question, answer }) {
           <img
             src={close}
             alt="close"
-            className={`lg:w-14 w-20 transform transition-transform duration-500 ${
-              isOpen ? "rotate-45" : ""
-            }`}
+            className={`lg:w-14 w-20 transform transition-transform duration-500 ${isOpen ? "rotate-45" : ""
+              }`}
           />
         </button>
       </div>
       <div
-        className={`overflow-hidden transition-max-height duration-1500 ease-in-out ${
-          isOpen ? "max-h-screen" : "max-h-0"
-        }`}
+        className={`overflow-hidden transition-max-height duration-1500 ease-in-out ${isOpen ? "max-h-screen" : "max-h-0"
+          }`}
       >
         {isOpen && (
           <div className="undertext text-white text-xl jost">{answer}</div>
