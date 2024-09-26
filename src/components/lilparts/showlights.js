@@ -6,7 +6,7 @@ function Showlights() {
       {[1, 2].map((_, index) => (
         <div
           key={index}
-          className="container lightshow svelte-cctgkx"
+          className="container lightshow svelte-cctgkx !max-w-none"
           style={{ opacity: 1 }}
         >
           <div
