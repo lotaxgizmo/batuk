@@ -1,24 +1,27 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Hero from "./components/Hero";
-import Bunch from "./components/Bunch";
-// import Header from "./components/Header";
-// import Room from "./components/Room";
-// import Batuk from "./components/Batuk";
-// import Whome from "./components/Whome";
-// import Smokesection from "./components/Smokesection";
-// import Faq from "./components/Faq";
-// import Tokenomics from "./components/Tokenomics";
-// import Footer from "./components/Footer"; 
+
+const Hero = lazy(() => import("./components/Hero"));
+const Bunch = lazy(() => import("./components/Bunch"));
+// const Header = lazy(() => import("./components/Header"));
+// const Room = lazy(() => import("./components/Room"));
+// const Batuk = lazy(() => import("./components/Batuk"));
+// const Whome = lazy(() => import("./components/Whome"));
+// const Smokesection = lazy(() => import("./components/Smokesection"));
+// const Faq = lazy(() => import("./components/Faq"));
+// const Tokenomics = lazy(() => import("./components/Tokenomics"));
+// const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/home" element={<Bunch />} />
-        </Routes>
+        <Suspense fallback={<div></div>}>
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/home" element={<Bunch />} />
+          </Routes>
+        </Suspense>
       </div>
     </Router>
   );
