@@ -1,0 +1,112 @@
+/* Leaderboard.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap");
+
+.leaderboard-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.leaderboard-title {
+  color: #00ff00;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.leaderboard-subtitle {
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.podium-player {
+  text-align: center;
+  padding: 10px;
+}
+
+.podium-first {
+  border: 2px solid #000000;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+
+.podium-second,
+.podium-third {
+  border: 1px solid #000000;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #333; /* Placeholder for avatar */
+  margin-bottom: 10px;
+}
+
+.player-name {
+  font-size: 1rem;
+}
+
+.player-volume {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+/* Leaderboard table with rounded corners and cell borders */
+.leaderboard-table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #333; /* Adds a border to each cell */
+}
+
+.leaderboard-table th {
+  color: white;
+}
+
+.leaderboard-table tbody tr:first-child th:first-child,
+.leaderboard-table tbody tr:first-child td:first-child {
+  border-top-left-radius: 0px; /* Round top-left cell */
+}
+
+.leaderboard-table tbody tr:first-child th:last-child,
+.leaderboard-table tbody tr:first-child td:last-child {
+  border-top-right-radius: 0px; /* Round top-right cell */
+}
+
+.leaderboard-table tbody tr:last-child th:first-child,
+.leaderboard-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 20px; /* Round bottom-left cell */
+}
+
+.leaderboard-table tbody tr:last-child th:last-child,
+.leaderboard-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 20px; /* Round bottom-right cell */
+}
+
+.leaderboard-table .highlight {
+  background-color: #222;
+  font-weight: bold;
+  color: #ffa500;
+}

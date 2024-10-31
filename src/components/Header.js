@@ -5,10 +5,10 @@ import dextools from "../assets/dextools.png";
 import tg from "../assets/tg.png";
 
 const menuItems = [
-  { name: "HOME", href: "#home" },
-  { name: "ABOUT", href: "#about" },
-  { name: "TOKENOMICS", href: "#tokenomics" },
-  { name: "FAQ", href: "#faq" },
+  { name: "HOME", href: "/home" },
+  { name: "TOKENOMICS", href: "/home#tokenomics" },
+  { name: "FAQ", href: "/home#faq" },
+  { name: "LEADERBOARD", href: "/leaderboard" },
 ];
 
 function Header() {
@@ -24,7 +24,7 @@ function Header() {
         </a>
 
         <div className="menu hidden lg:flex">
-          <ul className="flex flex-row gap-4">
+          <ul className="flex flex-row gap-4 adi">
             {menuItems.map((item, index) => (
               <li
                 key={index}

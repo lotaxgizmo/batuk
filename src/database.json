@@ -1,0 +1,32 @@
+{
+    "6677921668": {
+        "referrals": [
+            "1228994409"
+        ],
+        "referred_by": null,
+        "name": "Reality Is Code"
+    },
+    "1228994409": {
+        "referrals": [
+            "679462211",
+            "7232085131"
+        ],
+        "referred_by": "6677921668",
+        "name": "Web Dev For $GONDOLA Jesus Baby"
+    },
+    "679462211": {
+        "referrals": [],
+        "referred_by": "1228994409",
+        "name": "King David The Second The Website King! \ud83d\udc51"
+    },
+    "7232085131": {
+        "referrals": [],
+        "referred_by": "1228994409",
+        "name": "King David The first"
+    },
+    "495899604": {
+        "referrals": [],
+        "referred_by": null,
+        "name": "mewcollector"
+    }
+}

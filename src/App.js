@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Leaderboard from "./Leaderboard";
 
 const Hero = lazy(() => import("./components/Hero"));
 const Bunch = lazy(() => import("./components/Bunch"));
@@ -15,11 +16,14 @@ const Bunch = lazy(() => import("./components/Bunch"));
 function App() {
   return (
     <Router>
+
+
       <div className="App">
         <Suspense fallback={<div></div>}>
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/home" element={<Bunch />} />
+            <Route path="/leaderboard" element={<Leaderboard />} />
           </Routes>
         </Suspense>
       </div>
