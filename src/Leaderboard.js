@@ -52,7 +52,7 @@ const Leaderboard = () => {
 
             <Header />
             <div className="space mb-10"></div>
-            <h2 className="text-black text-8xl text-center mb-10 adi">BATUK LEADERBOARD</h2>
+            <h2 className="text-black text-5xl lg:text-8xl text-center mb-10 adi">BATUK LEADERBOARD</h2>
             {/* <p className="leaderboard-subtitled adi text-xl font-light !text-black mb-5">
                 Track the referrals and active engagement of top users.
             </p> */}
